@@ -100,6 +100,7 @@ color: var(--organge-color);
     z-index: 10001;
     display: none;
 }
+
 .container{
     position: relative;
     width: 100%;
@@ -111,6 +112,8 @@ color: var(--organge-color);
     background-size: cover;
     background-position: center;
     overflow: hidden;
+   /* justify-content: space-between;
+    padding: 100px 5px 0;*/
 }
 
 .container img {
@@ -118,4 +121,90 @@ color: var(--organge-color);
     position: absolute;
     bottom: -500px;
     right: 200px;
+}
+
+.home-text{
+    
+    padding: 0 150px;
+    margin-top: 200px;
+   
+}
+
+.home-text span{
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--green-coloer);
+}
+
+.home-text h1{
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    
+}
+
+.btn{
+    padding: 0.6rem 1rem;
+    background: var(--green-coloer);
+    color: var(--bg-color);
+    font-weight: 400;
+    border-radius: 5rem;
+    display: flex;
+    align-items:  center;
+    justify-content: space-between;
+    column-gap: 00.5rem;
+    max-width: 160px;
+}
+
+.btn .bx{
+    padding:  4px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 1rem;
+    font-size: 20px;
+    margin: auto;
+}
+
+.btn:hover{
+    background: var(--light-orange-color);
+    transition: 0.2s ease;
+}
+
+.swiper-button-next{
+    background: url('/img/right-arrow.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    margin-right: 20px;
+}
+.swiper-button-next::after{
+    display: none;
+
+}
+.swiper-button-prev{
+    background: url(/img/left-arrow.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    margin-left: 20px;
+}
+.swiper-button-prev::after{
+    display: none;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heading h1{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.heading span{
+    color: var(--green-coloer);
+}
+.categories{
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
 }
